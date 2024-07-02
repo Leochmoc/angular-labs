@@ -1,0 +1,33 @@
+
+<button
+  class="p-4 bg-blue-500 text-white"
+(click)="increment()">Increment</button>
+<button
+  class="p-4 bg-blue-500 text-white"
+(click)="decrement()">decrement</button>
+<button
+  class="p-4 bg-blue-500 text-white"
+(click)="multiply()">multiply</button>
+<button
+  class="p-4 bg-blue-500 text-white"
+(click)="divide()">divide</button>
+<button
+  class="p-4 bg-blue-500 text-white"
+(click)="square()">square</button>
+<button
+  class="p-4 bg-blue-500 text-white"
+(click)="cube()">cube</button>
+<button
+  class="p-4 bg-blue-500 text-white"
+(click)="reset()">reset</button>
+
+<div>
+  {{counter}}
+</div>
+
+<input [(ngModel)]="text" (input)="updateCounts()" />
+
+<div>
+  <h3>Text Length</h3>
+  {{textlength}}
+</div>
