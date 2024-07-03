@@ -1,0 +1,18 @@
+<main class="grid grid-rows-[100px__1fr] grid-cols-[200px_1fr] gap-2 p-2 h-screen relative">
+  <header class="col-span-2 bg-zinc-800 rounded-lg flex items-center justify-center">
+
+    <nav class="flex gap-2">
+      <a routerLink="/home" routerLinkActive="underline">Home</a>
+      <a routerLink="/djsakdj" routerLinkActive="underline">404</a>
+    </nav>
+
+  </header>
+  <aside class="bg-zinc-800 rounded-lg">
+    It is a Sidebar
+  </aside>
+  <section class="bg-zinc-800 rounded-lg">
+    <ng-content />
+  </section>
+</main>
+
+<router-outlet />

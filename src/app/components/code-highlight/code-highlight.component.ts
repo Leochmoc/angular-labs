@@ -9,7 +9,11 @@ import { HighlightService } from '../../services/highlight.service';
   styleUrl: './code-highlight.component.css'
 })
 export class CodeHighlightComponent {
-  @Input() code: string = '';
+  @Input() code: string = `
+      function saludo() {
+        console.log("¡Hola mundo!");
+      }
+    `;
   @Input() language: string = '';
 
   constructor(private el: ElementRef, private highlightService: HighlightService) {}
@@ -22,5 +26,7 @@ export class CodeHighlightComponent {
       console.error('Code element not found');
     }
   }
+
+  
 
 }
