@@ -4,11 +4,12 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { CodeHighlightComponent } from './components/code-highlight/code-highlight.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LayoutComponent } from './layouts/layout/layout.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, RouterLink,CodeHighlightComponent, CounterComponent, HomeComponent],
+  imports: [RouterOutlet, CommonModule, RouterLink,CodeHighlightComponent, CounterComponent, HomeComponent, LayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

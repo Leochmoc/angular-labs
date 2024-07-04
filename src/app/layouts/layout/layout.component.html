@@ -3,16 +3,16 @@
 
     <nav class="flex gap-2">
       <a routerLink="/home" routerLinkActive="underline">Home</a>
-      <a routerLink="/djsakdj" routerLinkActive="underline">404</a>
+      <a routerLink="/labs/home" routerLinkActive="underline">labs</a>
+      <a routerLink="/labs/info" routerLinkActive="underline">info</a>
     </nav>
 
   </header>
   <aside class="bg-zinc-800 rounded-lg">
     It is a Sidebar
   </aside>
-  <section class="bg-zinc-800 rounded-lg">
+  <section class="bg-zinc-800 rounded-lg overflow-y-auto">
     <ng-content />
+    <router-outlet />
   </section>
 </main>
-
-<router-outlet />

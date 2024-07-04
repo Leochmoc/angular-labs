@@ -1,7 +1,9 @@
-<app-layout>
-  <main class="flex items-center justify-center h-full">
-    <h1 class="text-[12rem] font-bold bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-violet-500 text-transparent leading">
-      Home 
-    </h1>
-  </main>
-</app-layout>
+<main class="h-screen flex flex-col items-center justify-center">
+  <nav class="flex gap-4">
+    <a routerLink="/home" routerLinkActive="underline">Home</a>
+    <a routerLink="/labs" routerLinkActive="underline">labs</a>
+  </nav>
+  <app-title>
+    Home
+  </app-title>
+</main>

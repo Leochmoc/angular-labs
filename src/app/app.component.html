@@ -1,5 +1,8 @@
-<router-outlet />
-<!-- 
+<!-- <router-outlet />
+<app-layout>
+  <ng-content />
+  
+  <app-home/>
 
 ### COMENTS ###
 
@@ -7,4 +10,39 @@
 
 ### COMENTS ###
 
--->
+
+
+</app-layout> -->
+
+<!-- <main class="grid grid-rows-[100px__1fr] grid-cols-[200px_1fr] gap-2 p-2 h-screen relative">
+  <header class="col-span-2 bg-zinc-800 rounded-lg flex items-center justify-center">
+
+    <nav class="flex gap-2">
+      <a routerLink="/home" routerLinkActive="underline">Home</a>
+      <a routerLink="/djsakdj" routerLinkActive="underline">404</a>
+    </nav>
+
+  </header>
+  <aside class="bg-zinc-800 rounded-lg">
+    It is a Sidebar
+  </aside>
+  <section class="bg-zinc-800 rounded-lg overflow-y-auto">
+    <ng-content />
+    <router-outlet />
+  </section>
+</main> -->
+
+@defer (on viewport) {
+  <router-outlet />
+} @placeholder {
+  <p></p>
+} @loading (minimum 1s) {
+  <div class="relative flex items-center justify-center h-screen">
+    <p class="absolute">loading...</p>
+    <div class=" animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-zinc-800"></div>
+  </div>
+} @error {
+  <div class="flex items-center justify-center h-screen">
+    <h1 class="text-4xl text-red-500">Error</h1>
+  </div>
+}
